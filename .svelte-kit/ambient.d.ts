@@ -124,6 +124,7 @@ declare module '$env/static/private' {
 	export const npm_config_node_gyp: string;
 	export const ALACRITTY_LOG: string;
 	export const npm_package_devDependencies__sveltejs_kit: string;
+	export const npm_package_dependencies__atproto_api: string;
 	export const npm_package_devDependencies_sass: string;
 	export const DBUS_SESSION_BUS_ADDRESS: string;
 	export const npm_package_license: string;
@@ -265,6 +266,7 @@ declare module '$env/dynamic/private' {
 		npm_config_node_gyp: string;
 		ALACRITTY_LOG: string;
 		npm_package_devDependencies__sveltejs_kit: string;
+		npm_package_dependencies__atproto_api: string;
 		npm_package_devDependencies_sass: string;
 		DBUS_SESSION_BUS_ADDRESS: string;
 		npm_package_license: string;

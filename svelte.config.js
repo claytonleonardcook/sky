@@ -10,6 +10,7 @@ export default {
   kit: {
     adapter: adapter(),
     alias: {
+      '@stores/*': './src/stores/*',
       '@atoms/*': './src/components/atoms/*',
       '@molecules/*': './src/components/molecules/*',
       '@organisms/*': './src/components/organisms/*',

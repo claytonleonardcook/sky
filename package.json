@@ -40,6 +40,7 @@
   },
   "type": "module",
   "dependencies": {
+    "@atproto/api": "^0.4.3",
     "global": "^4.4.0"
   }
 }
