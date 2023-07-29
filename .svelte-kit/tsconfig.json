@@ -4,14 +4,11 @@
 			"@stores/*": [
 				"../src/stores/*"
 			],
-			"@atoms/*": [
-				"../src/components/atoms/*"
+			"@components": [
+				"../src/components/index"
 			],
-			"@molecules/*": [
-				"../src/components/molecules/*"
-			],
-			"@organisms/*": [
-				"../src/components/organisms/*"
+			"@components/*": [
+				"../src/components/index/*"
 			]
 		},
 		"rootDirs": [
@@ -28,7 +25,8 @@
 		],
 		"moduleResolution": "node",
 		"module": "esnext",
-		"target": "esnext"
+		"target": "esnext",
+		"ignoreDeprecations": "5.0"
 	},
 	"include": [
 		"ambient.d.ts",

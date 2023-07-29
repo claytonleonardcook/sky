@@ -11,9 +11,7 @@ export default {
     adapter: adapter(),
     alias: {
       '@stores/*': './src/stores/*',
-      '@atoms/*': './src/components/atoms/*',
-      '@molecules/*': './src/components/molecules/*',
-      '@organisms/*': './src/components/organisms/*',
+      '@components': './src/components/index',
     },
   },
 };
