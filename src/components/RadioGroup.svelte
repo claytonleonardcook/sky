@@ -10,6 +10,6 @@
   setContext('name', name);
 </script>
 
-<fieldset class="FormRadioGroup" {...$$restProps}>
+<fieldset {...$$restProps}>
   <slot />
 </fieldset>

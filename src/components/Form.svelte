@@ -1,11 +1,19 @@
-<script lang="ts" strictEvents>
+<script lang="ts">
   type $$Props = {
-    className?: string;
+    onSubmit: Optional<(data: FormData) => void>;
   } & Partial<HTMLFormElement>;
 
-  export let className = '';
+  export let onSubmit: Optional<(data: FormData) => void>;
+
+  const onsubmit = (event: SubmitEvent) => {
+    event.preventDefault();
+    const target = event.target as HTMLFormElement;
+
+    const data = new FormData(target);
+    onSubmit && onSubmit(data);
+  };
 </script>
 
-<form class={`Form ${className}`} {...$$restProps}>
+<form on:submit={onsubmit} {...$$restProps}>
   <slot />
 </form>

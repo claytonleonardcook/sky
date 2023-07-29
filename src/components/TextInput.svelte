@@ -2,4 +2,4 @@
   type $$Props = Partial<HTMLInputElement>;
 </script>
 
-<input class="FormTextInput" {...$$restProps} />
+<input {...$$restProps} />

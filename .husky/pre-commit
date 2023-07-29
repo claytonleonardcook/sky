@@ -12,6 +12,8 @@ yarn check-format ||
     false;
 )
 
+yarn lint
+
 # Check ESLint Standards
 yarn check-lint ||
 (
