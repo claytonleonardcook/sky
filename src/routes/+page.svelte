@@ -1,22 +1,33 @@
 <script lang="ts">
-  import { Form, TextInput, RadioGroup, RadioInput } from '@components';
+  import { Form, Input, InputGroup } from '@components';
 </script>
 
-<Form
-  onSubmit={(data) => {
-    data.forEach((key) => {
-      console.log(key);
-    });
-  }}
->
-  <TextInput name="name" placeholder="Name">Name</TextInput>
-  <RadioGroup name="group1">
-    <RadioInput placeholder="A" value="a" />
-    <RadioInput placeholder="B" value="b" />
-    <RadioInput placeholder="C" value="c" />
-  </RadioGroup>
-  <input type="submit" value="Submit" />
-</Form>
+<main class="main">
+  <Form
+    className="form1"
+    onSubmit={(data) => {
+      // console.log(Ob);
+    }}
+  >
+    <Input type="text" placeholder="First Name" />
+    <Input type="text" placeholder="Last Name" />
+    <InputGroup name="gender" component="fieldset">
+      <Input type="radio" placeholder="Male" value="male" />
+      <Input type="radio" placeholder="Female" value="female" />
+      <Input type="radio" placeholder="Non-Binary" value="nonbinary" />
+    </InputGroup>
+    <InputGroup name="major" component="fieldset">
+      <Input type="checkbox" placeholder="Computer Science" value="cs" />
+      <Input type="checkbox" placeholder="Computer Informational Systems" value="csis" />
+      <Input type="checkbox" placeholder="Math" value="math" />
+    </InputGroup>
+    <button type="submit">Submit</button>
+  </Form>
+</main>
 
-<style lang="scss">
+<style>
+  .main > :global(.form1) {
+    display: flex;
+    flex-direction: column;
+  }
 </style>

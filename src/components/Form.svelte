@@ -1,19 +1,24 @@
 <script lang="ts">
+  import formData, { type Input } from '../utils/Form';
+
   type $$Props = {
-    onSubmit: Optional<(data: FormData) => void>;
+    className?: string;
+    onSubmit?: (data: Record<string, Input>) => void;
   } & Partial<HTMLFormElement>;
 
-  export let onSubmit: Optional<(data: FormData) => void>;
+  export let className: $$Props['className'] = '';
+  export let onSubmit: $$Props['onSubmit'] = undefined;
 
   const onsubmit = (event: SubmitEvent) => {
     event.preventDefault();
     const target = event.target as HTMLFormElement;
 
-    const data = new FormData(target);
-    onSubmit && onSubmit(data);
+    const data = formData(target);
+    console.log(data);
+    // onSubmit && onSubmit(data);
   };
 </script>
 
-<form on:submit={onsubmit} {...$$restProps}>
+<form class={className} on:submit={onsubmit} {...$$restProps}>
   <slot />
 </form>

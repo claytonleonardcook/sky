@@ -3,14 +3,13 @@
 
   type $$Props = {
     placeholder: string;
-  } & Omit<Partial<HTMLInputElement>, 'name'>;
+  } & Partial<HTMLInputElement>;
 
   export let placeholder: string;
-
   const name: string = getContext('name');
 </script>
 
 <label>
-  <input {name} type="radio" {...$$restProps} />
   {placeholder}
+  <input {name} {...$$restProps} />
 </label>
