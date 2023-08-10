@@ -1,3 +1,15 @@
 {
-	"/": []
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/feed": [
+		"src/routes/+layout.ts"
+	],
+	"/login": [
+		"src/routes/+layout.ts"
+	],
+	"/profile": [
+		"src/routes/+layout.ts"
+	]
 }

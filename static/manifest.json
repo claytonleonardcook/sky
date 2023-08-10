@@ -1,6 +1,6 @@
 {
-  "name": "primir",
-  "start_url": "/",
+  "name": "sky",
+  "start_url": "/feed",
   "icons": [
     {
       "src": "favicon.png",

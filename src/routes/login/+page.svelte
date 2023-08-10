@@ -1,10 +1,7 @@
 <script lang="ts">
-  export let data;
 </script>
 
-<main>
-  <slot />
-</main>
+<main class="main">Login</main>
 
 <style lang="scss">
 </style>

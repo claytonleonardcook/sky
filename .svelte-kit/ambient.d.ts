@@ -58,6 +58,7 @@ declare module '$env/static/private' {
 	export const npm_package_devDependencies_vite: string;
 	export const LOGNAME: string;
 	export const XDG_SESSION_TYPE: string;
+	export const npm_package_devDependencies__types_serviceworker: string;
 	export const npm_package_devDependencies__typescript_eslint_parser: string;
 	export const SYSTEMD_EXEC_PID: string;
 	export const npm_package_scripts_build: string;
@@ -130,6 +131,7 @@ declare module '$env/static/private' {
 	export const npm_package_scripts_dev: string;
 	export const npm_package_devDependencies__vitejs_plugin_basic_ssl: string;
 	export const HYPRLAND_LOG_WLR: string;
+	export const npm_package_devDependencies_vite_plugin_mkcert: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
 	export const JOURNAL_STREAM: string;
 	export const XCURSOR_THEME: string;
@@ -217,6 +219,7 @@ declare module '$env/dynamic/private' {
 		npm_package_devDependencies_vite: string;
 		LOGNAME: string;
 		XDG_SESSION_TYPE: string;
+		npm_package_devDependencies__types_serviceworker: string;
 		npm_package_devDependencies__typescript_eslint_parser: string;
 		SYSTEMD_EXEC_PID: string;
 		npm_package_scripts_build: string;
@@ -289,6 +292,7 @@ declare module '$env/dynamic/private' {
 		npm_package_scripts_dev: string;
 		npm_package_devDependencies__vitejs_plugin_basic_ssl: string;
 		HYPRLAND_LOG_WLR: string;
+		npm_package_devDependencies_vite_plugin_mkcert: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
 		JOURNAL_STREAM: string;
 		XCURSOR_THEME: string;
