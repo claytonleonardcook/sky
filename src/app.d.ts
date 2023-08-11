@@ -4,3 +4,7 @@
 /// <reference types="@sveltejs/kit" />
 /// <reference types="unplugin-icons/types/svelte" />
 type Optional<T> = T | undefined;
+
+type Component<T> = {
+  className?: string;
+} & Partial<T>;

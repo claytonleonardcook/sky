@@ -4,12 +4,14 @@
 		"src/routes/+layout.ts"
 	],
 	"/feed": [
+		"src/routes/feed/+page.ts",
 		"src/routes/+layout.ts"
 	],
 	"/login": [
 		"src/routes/+layout.ts"
 	],
 	"/profile": [
+		"src/routes/profile/+page.ts",
 		"src/routes/+layout.ts"
 	]
 }

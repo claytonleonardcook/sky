@@ -12,6 +12,7 @@ export default {
     alias: {
       '@stores/*': './src/stores/*',
       '@components': './src/components/index',
+      '@styles': './src/styles/*',
     },
   },
 };

@@ -1,0 +1,19 @@
+@mixin mq($breakpoint) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin mq-lt($breakpoint) {
+  @media only screen and (max-width:#{$breakpoint - .01}) {
+    @content;
+  }
+}
+
+@mixin mq-h {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}

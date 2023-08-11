@@ -18,6 +18,15 @@ const config = {
   test: {
     include: ['src/**/*.{test,spec}.{js,ts}'],
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @use '@styles/settings' as *;
+        `,
+      },
+    },
+  },
 };
 
 export default config;
