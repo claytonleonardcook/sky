@@ -2,7 +2,7 @@
   import { browser } from '$app/environment';
   import type { BskyAgent } from '@atproto/api';
   import { blueskyAgentStore } from '@stores/blueskyStore';
-  import Button from '../../components/Button.svelte';
+  import { Button, Input, Form } from '@components';
 
   let agent: BskyAgent | null = null;
 
@@ -12,38 +12,35 @@
     const form = event.target as HTMLFormElement;
     const data = new FormData(form);
     const [username, password] = data;
-    if (browser) {
-      if (agent) {
-        const { data } = await agent.login({
-          identifier: username[1].toString(),
-          password: password[1].toString(),
-        });
-        localStorage.setItem('jwt', data.accessJwt);
-      }
-    }
+    console.log(username, password);
+    // if (browser) {
+    //   if (agent) {
+    //     const { data } = await agent.login({
+    //       identifier: username[1].toString(),
+    //       password: password[1].toString(),
+    //     });
+    //     localStorage.setItem('jwt', data.accessJwt);
+    //   }
+    // }
   };
 </script>
 
 <main class="main">
-  <form class="login" on:submit={handleLoginSubmit}>
+  <Form className="login" on:submit={handleLoginSubmit}>
     <h1>Login</h1>
-    <label>
-      <span>Username</span>
-      <input name="username" type="text" placeholder="Username" required />
-    </label>
-    <label>
-      <span>Password</span>
-      <input name="password" type="password" placeholder="Password" required />
-    </label>
+    <Input name="username" type="text" placeholder="Username" required />
+    <Input name="password" type="password" placeholder="Password" required />
     <Button type="submit" variant="primary">Login</Button>
-  </form>
+  </Form>
 </main>
 
 <style lang="scss">
-  form.login {
-    display: flex;
-    flex-direction: column;
-    padding: $vr * 2 $hr;
-    gap: $vr;
+  main {
+    > :global(.login) {
+      display: flex;
+      flex-direction: column;
+      padding: $vr * 2 $hr;
+      gap: $vr;
+    }
   }
 </style>

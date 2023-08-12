@@ -7,7 +7,7 @@
   export let variant: $$Props['variant'] = 'primary';
 </script>
 
-<button class={className} data-variant={variant}>
+<button class={className} data-variant={variant} on:click {...$$restProps}>
   <slot />
 </button>
 
