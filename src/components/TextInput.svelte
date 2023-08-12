@@ -87,6 +87,7 @@
                 transform: translateY(-40%);
                 font-size: small;
                 color: $primary;
+                z-index: 0;
             }
             > input {
                 border-color: $primary;
