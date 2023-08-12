@@ -12,24 +12,8 @@ body {
   color: $text;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  gap: 1em;
-}
-
 fieldset {
   border: none;
   padding: 0;
   margin: 0;
-}
-
-label {
-  display: flex;
-  flex-direction: column;
-  gap: $vr;
-  > span {
-    font-size: x-small;
-  }
 }

@@ -4,9 +4,7 @@
 
 </script>
 
-<main class="main">
-    <Button on:click={() => goto('/login')}>Login</Button>
-</main>
+<Button on:click={() => goto('/login')}>Login</Button>
 
 <style lang="scss">
 </style>

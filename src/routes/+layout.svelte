@@ -6,5 +6,11 @@
   <slot />
 </main>
 
-<style lang="scss" global>
+<style lang="scss">
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+  }
 </style>

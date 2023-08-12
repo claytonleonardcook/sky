@@ -25,23 +25,19 @@
   };
 </script>
 
-<main class="main">
-  <Form className="login" on:submit={handleLoginSubmit}>
-    <h1>Login</h1>
-    <TextInput name="username" type="text" placeholder="Username" required />
-    <TextInput name="password" type="password" placeholder="Password" required />
-    <!-- <Input name="gender" type="radio" placeholder="Male" value="male" /> -->
-    <Button type="submit" variant="primary">Login</Button>
-  </Form>
-</main>
+<Form className="login" on:submit={handleLoginSubmit}>
+  <h1>Login</h1>
+  <TextInput name="username" type="text" placeholder="Username" required />
+  <TextInput name="password" type="password" placeholder="Password" required />
+  <!-- <Input name="gender" type="radio" placeholder="Male" value="male" /> -->
+  <Button type="submit" variant="primary">Login</Button>
+</Form>
 
 <style lang="scss">
-  main {
-    > :global(.login) {
-      display: flex;
-      flex-direction: column;
-      padding: $vr * 2 $hr;
-      gap: $vr;
-    }
+  :global(.login) {
+    display: flex;
+    flex-direction: column;
+    padding: $vr * 2 $hr;
+    gap: $vr;
   }
 </style>

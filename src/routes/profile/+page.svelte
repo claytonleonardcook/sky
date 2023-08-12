@@ -1,11 +1,9 @@
 <script lang="ts">
   export let data;
   console.log(data);
-
-  //   console.log(data);
 </script>
 
-<main class="main">Profile</main>
+<h1>Profile</h1>
 
 <style lang="scss">
 </style>

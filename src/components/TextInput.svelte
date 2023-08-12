@@ -65,7 +65,8 @@
             outline: $background solid math.div($hr, 2);
             transition: 
                 transform $transition-fast,
-                font-size $transition-fast;
+                font-size $transition-fast,
+                z-index $transition-fast;
             z-index: -1;
         }
 
