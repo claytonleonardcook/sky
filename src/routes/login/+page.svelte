@@ -2,7 +2,7 @@
   import { browser } from '$app/environment';
   import type { BskyAgent } from '@atproto/api';
   import { blueskyAgentStore } from '@stores/blueskyStore';
-  import { Button, Input, Form } from '@components';
+  import { Button, TextInput, Form } from '@components';
 
   let agent: BskyAgent | null = null;
 
@@ -28,8 +28,9 @@
 <main class="main">
   <Form className="login" on:submit={handleLoginSubmit}>
     <h1>Login</h1>
-    <Input name="username" type="text" placeholder="Username" required />
-    <Input name="password" type="password" placeholder="Password" required />
+    <TextInput name="username" type="text" placeholder="Username" required />
+    <TextInput name="password" type="password" placeholder="Password" required />
+    <!-- <Input name="gender" type="radio" placeholder="Male" value="male" /> -->
     <Button type="submit" variant="primary">Login</Button>
   </Form>
 </main>
