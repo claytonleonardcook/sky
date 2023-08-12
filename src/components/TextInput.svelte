@@ -51,12 +51,14 @@
         position: relative;
         font-size: medium;
         padding-bottom: math.div($vr, 2);
+        overflow-x: clip;
+        overflow-y: visible;
 
         &::before {
             position: absolute;
             box-sizing: border-box;
             transform: translateY(60%);
-            margin-left: $hr;
+            margin: 0 $hr;
             content: attr(data-placeholder);
             font-size: inherit;
             background-color: $background;
@@ -64,6 +66,7 @@
             transition: 
                 transform $transition-fast,
                 font-size $transition-fast;
+            z-index: -1;
         }
 
         > input {

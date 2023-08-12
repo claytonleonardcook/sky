@@ -22,6 +22,7 @@
     border-radius: $corner;
     cursor: pointer;
     transition: transform $transition, background-color $transition-fast;
+    overflow: clip;
 
     &[data-variant='primary'] {
       background-color: $primary;
@@ -37,7 +38,13 @@
       }
     }
 
-    &:hover {
+    &:focus {
+      border: none;
+      outline: $text solid 1px;
+    }
+
+    &:hover,
+    &:focus {
       transform: translateY(math.div($vr, -2));
     }
   }
